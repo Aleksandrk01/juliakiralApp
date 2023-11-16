@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styl.css">
+    <title>julia.kiral</title>
+    <link rel="icon" href="/img/teapot_87584.png" type="images/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Poiret+One&display=swap" rel="stylesheet">
+</header>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <p class="insta-logo">JULIA.KIRAL</p>
+            </div>
+            <div class="time-prof">
+                <p>Моя фотография - про життя, таке як воно є</p>
+            </div>
+            <div class="pro-mene">
+                <img class="img_pro-mene" src="/img/IMG_5850 (1).JPG">
+            </div>
+        </header>
+        <main class="main">
+            <div class="about-me">
+                <h1 class="logo_about-me">
+                    Про мене 
+                </h1>
+                <div class="info-about-me">
+                    <p class="p_about-me">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis assumenda blanditiis tempora molestias adipisci obcaecati. Harum officiis mollitia quibusdam aperiam vel rerum, modi nulla natus officia nemo, aspernatur dolorum facilis?<br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora architecto veniam cum placeat qui sint numquam quibusdam accusantium iste similique! Inventore quas repellat itaque non laborum delectus perferendis quibusdam aperiam.<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quisquam totam officia nesciunt porro atque, adipisci maxime, dolor ex error dolores eveniet et nisi at. A veritatis at dolorem itaque.
+                    </p>
+                </div>
+            </div>
+            <div class="prise">
+
+                
+                     <h1 id="Prise" class="story">прайс</h1>
+                   <div class="prise-text">
+                    <h2 class="story">Індивідуальна </h2> 
+                    <br><img class="indv-photo" src="/img/IMG_7221.JPG">
+                    <p class="prise-text">
+                    <br>- консультація, допомога з вибором образу та локації; 
+                    <br>- зйомка 1 година 
+                    <br>- авторська обробка 50 + фото
+                    </p>
+                     <br>
+                    <p class="mani">1000 грн </p>
+                        <button class="button-zakaz"><a target="_blank" class="text_button" href="https://www.instagram.com/julia.kiral/">Замовити в дірект</a></button>
+                    <h2 class="story">Лавсторі </h2>
+                    <br><img class="indv-photo" src="/img/IMG_7228.JPG"> 
+                    <p class="prise-text">
+                    <br>- консультація, допомога з вибором образу та локації; 
+                    <br>- зйомка 1 година 
+                    <br>- авторська обробка 70 + фото
+                    </p>
+                    <p class="mani">1200 грн </p>
+                    <button class="button-zakaz"><a target="_blank" class="text_button" href="https://www.instagram.com/julia.kiral/">Замовити в дірект</a></button>
+                    <br> <h2 class="story">story / Сімейна </h2> 
+                    <br><img class="indv-photo" src="/img/IMG_7223.JPG">
+                    <p class="prise-text">
+                        <br>- консультація, допомога з вибором образу та локації; 
+                    <br>- зйомка 1 година 
+                    <br>- авторська обробка 70 + фото
+                    </p>
+                    <p class="mani">1500 грн </p>
+                    <button class="button-zakaz"><a target="_blank" class="text_button" href="https://www.instagram.com/julia.kiral/">Замовити в дірект</a></button>
+                   </div>               
+            </div>
+            <div id="conditions" class="conditions">
+                <h1 class="header-condition">Умови</h1>
+                <p class="conditions-text"> 
+                  <br>- Замовляючи зйомку, ви автоматично погоджуєтеся на мою авторську кольорокорекцію і ретуш; 
+
+                  <br>- Оренда фотостудії, платні локації - оплачуються окремо; 
+
+                  <br>- Я буду використовувати кадри, зроблені з вашою участю в моїх соцмережах і портфоліо. 
+
+                  <br>- Якщо ви не хочете, щоб кадри з вами використовували - про це потрібно повідомити в момент бронювання дати, вартість конфіденційної роботи +30% від прайсу;
+
+                  <br>- Я не віддаю вихідні матеріали, а відбір фотографій здійснюється мною особисто завжди;
+
+                  <br>- Термін віддачі готових фотографій 10 робочих днів.
+                </p>
+            </div>
+        </main>
+        <footer class="footer">
+            <h1 id="Contact" class="header-contact">Contact</h1>
+            <div class="contact-1">
+            <div class="logo-inst">
+                <a target="_blank" class="inst-button" href="https://www.instagram.com/julia.kiral/"><img class="inst" src="img/instagram_icon-icons.com_65435.png"></a>
+            </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+       // Ваш существующий код
+document.querySelector('.burger')
+    .addEventListener('click', function () {
+        this.classList.toggle('active');
+        document.querySelector('.menu').classList.toggle('open');
+        document.body.classList.toggle('_lock');
+    });
+
+// Добавьте обработчики событий для каждого пункта меню
+const menuItems = document.querySelectorAll('.menu-li a');
+
+menuItems.forEach(function (menuItem) {
+    menuItem.addEventListener('click', function () {
+        document.querySelector('.burger').classList.remove('active');
+        document.querySelector('.menu').classList.remove('open');
+        document.body.classList.remove('_lock');
+    });
+});
+
+    </script>
+    <script href="/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
